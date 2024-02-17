@@ -17,6 +17,11 @@ func TestCheckTone(t *testing.T) {
 		{"abc", noTone},
 		{"yí", secondTone},
 		{"yùe", fourthTone},
+		{"yue1", firstTone},
+		{"yue2", secondTone},
+		{"yue3", thirdTone},
+		{"yue4", fourthTone},
+		{"yue5", noTone},
 	}
 
 	for _, tc := range testCases {

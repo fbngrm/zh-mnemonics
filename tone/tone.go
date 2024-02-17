@@ -11,6 +11,7 @@ const (
 )
 
 var firstTones = []string{
+	"1",
 	"ā",
 	"ē",
 	"ī",
@@ -19,6 +20,7 @@ var firstTones = []string{
 	"ǖ",
 }
 var secondTones = []string{
+	"2",
 	"á",
 	"é",
 	"í",
@@ -27,6 +29,7 @@ var secondTones = []string{
 	"ǘ",
 }
 var thirdTones = []string{
+	"3",
 	"ǎ",
 	"ě",
 	"ǐ",
@@ -35,6 +38,7 @@ var thirdTones = []string{
 	"ǚ",
 }
 var fourthTones = []string{
+	"4",
 	"à",
 	"è",
 	"ì",
