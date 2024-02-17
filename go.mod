@@ -1,4 +1,4 @@
-module fbngrm/zh-mnemo
+module fbngrm/zh-mnemonics
 
 go 1.20
 
