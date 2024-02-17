@@ -34,7 +34,7 @@ zhou zhou (zh-)	zhi	zha		zhe	zhai	zhei	zhao	zhou	zhan	zhen	zhang	zheng
 (jesus) christ (ch-)	chi	cha		che	chai		chao	chou	chan	chen	chang	cheng
 shlomo (sh-)	shi	sha		she	shai	shei	shao	shou	shan	shen	shang	sheng
 robocop (r-)	ri			re			rao	rou	ran	ren	rang	reng
-zuki (marielle) (z-)	zi	za		ze	zai	zei	zao	zou	zan	zen	zang	zeng
+zuki (z-)	zi	za		ze	zai	zei	zao	zou	zan	zen	zang	zeng
 cosmonaut (c-)	ci	ca		ce	cai		cao	cou	can	cen	cang	ceng
 santa claus (s-)	si	sa		se	sai		sao	sou	san	sen	sang	seng`
 
