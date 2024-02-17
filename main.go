@@ -1,13 +1,14 @@
 package main
 
 import (
-	"fbngrm/zh-mnemo/mnemonic"
-	"fbngrm/zh-mnemo/pinyin"
 	"log"
+
+	"github.com/fbngrm/zh-mnemonics/mnemonic"
+	"github.com/fbngrm/zh-mnemonics/pinyin"
 )
 
 func main() {
-	p := "nàn"
+	p := "nan1"
 	b := mnemonic.NewBuilder(pinyin.NewTable())
 	s, err := b.GetBase(p)
 	if err != nil {

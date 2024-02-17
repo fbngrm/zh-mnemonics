@@ -1,9 +1,10 @@
 package mnemonic
 
 import (
-	"fbngrm/zh-mnemo/pinyin"
-	"fbngrm/zh-mnemo/tone"
 	"fmt"
+
+	"github.com/fbngrm/zh-mnemonics/pinyin"
+	"github.com/fbngrm/zh-mnemonics/tone"
 )
 
 type Builder struct {
