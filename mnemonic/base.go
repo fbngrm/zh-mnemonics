@@ -3,18 +3,30 @@ package mnemonic
 import (
 	"fmt"
 
+	"github.com/fbngrm/zh-mnemonics/index"
 	"github.com/fbngrm/zh-mnemonics/pinyin"
 	"github.com/fbngrm/zh-mnemonics/tone"
 )
 
 type Builder struct {
 	table *pinyin.Table
+	index map[string]string
 }
 
-func NewBuilder(t *pinyin.Table) *Builder {
-	return &Builder{
-		table: t,
+func NewBuilder(path string) (*Builder, error) {
+	i, err := index.New(path)
+	if err != nil {
+		return nil, err
 	}
+	return &Builder{
+		table: pinyin.NewTable(),
+		index: i,
+	}, nil
+}
+
+func (b *Builder) Lookup(s string) string {
+	m, _ := b.index[s]
+	return m
 }
 
 func (b *Builder) GetBase(s string) (string, error) {
