@@ -47,6 +47,7 @@ func TestReplaceToneCharacters(t *testing.T) {
 		{"íóǒù", "ioou"},
 		{"ùǚē~", "ue"},
 		{"漢字", ""}, // Test with non-ASCII characters, they should remain unchanged
+		{"dao1", "dao"},
 	}
 
 	for _, tc := range testCases {
