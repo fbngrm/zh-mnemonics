@@ -97,6 +97,10 @@ func ReplaceToneCharacters(input string) string {
 		"3": "",
 		"4": "",
 		"5": "",
+		"ǜ": "u",
+		"ǚ": "u",
+		"ǘ": "u",
+		"ǖ": "u",
 	}
 
 	// replace tone characters with ASCII equivalents
