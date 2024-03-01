@@ -2,7 +2,6 @@ package mnemonic
 
 import (
 	"fmt"
-	"unicode/utf8"
 
 	"github.com/fbngrm/zh-mnemonics/index"
 	"github.com/fbngrm/zh-mnemonics/pinyin"
@@ -31,9 +30,6 @@ func (b *Builder) Lookup(s string) string {
 }
 
 func (b *Builder) GetBase(s string) (string, error) {
-	if utf8.RuneCountInString(s) > 1 {
-		return "", fmt.Errorf("multi-character words are not supported")
-	}
 	loc := tone.GetLocation(s)
 	pinyinAlpha := tone.ReplaceToneCharacters(s)
 	w, err := b.table.Find(pinyinAlpha)
