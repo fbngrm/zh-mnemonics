@@ -29,19 +29,19 @@ func (b *Builder) Lookup(s string) string {
 	return m
 }
 
-type Word struct {
+type Mnemonic struct {
 	Mnemonic       string
 	Pronounciation string
 }
 
-func (b *Builder) GetBase(s string) (*Word, error) {
+func (b *Builder) Get(s string) (Mnemonic, error) {
 	loc := tone.GetLocation(s)
 	pinyinAlpha := tone.ReplaceToneCharacters(s)
 	w, err := b.table.Find(pinyinAlpha)
 	if err != nil {
-		return nil, err
+		return Mnemonic{}, err
 	}
-	return &Word{
+	return Mnemonic{
 		Mnemonic:       fmt.Sprintf("%s %s %s\n", w.Initial, loc, w.Final),
 		Pronounciation: w.Pronounciation,
 	}, nil
